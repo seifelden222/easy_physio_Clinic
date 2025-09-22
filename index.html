@@ -1,125 +1,206 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>easyphysio Clinic Links</title>
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>easyphysio Clinic Links</title>
 
-    <!-- Bootstrap 5 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet" />
-    <!-- Bootstrap Icons -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-      rel="stylesheet" />
 
-    <style>
-      body {
-        background-image: url(4d432fc1-a37d-482b-a586-0f09a2332ef2.jpg);
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-        color: #fff;
-        min-height: 100vh;
-      }
-      .profile-pic {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        border: 3px solid #fff;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-      }
-      .btn-custom {
-        border-radius: 50px;
-        padding: 0.9rem 1.2rem;
-        font-weight: 600;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.6rem;
-        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-      }
-      .btn-custom:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
-      }
-      .btn-ig {
-        background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
-        color: #fff;
-      }
-      .btn-tk {
-        background: #000;
-        color: #fff;
-      }
-      .btn-fb {
-        background: #1877f2;
-        color: #fff;
-      }
-      .btn-call {
-        background: #28a745;
-        color: #fff;
-      }
-      .btn-location {
-        background: #6c757d;
-        color: #fff;
-      }
-      footer {
-        opacity: 0.8;
-        font-size: 0.9rem;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container py-5 text-center">
-      <img
-        src="WhatsApp Image 2025-09-22 at 5.00.15 PM.jpeg"
-        class="profile-pic mb-3"
-        alt="avatar" />
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Modern Arabic-friendly Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700&family=Pacifico&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
-      <h1 class="h5">easyphysio Clinic</h1>
-      <p class="text-light">@easyphysio_Clinic</p>
+  <style>
+    body {
+      background-image: url(4d432fc1-a37d-482b-a586-0f09a2332ef2.jpg);
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      color: #fff;
+      min-height: 100vh;
+      font-family: 'Inter', 'Tajawal', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+  /* Centered frosted card */
+    .card-wrapper {
+      max-width: 420px;
+      margin: 2.5rem auto;
+      backdrop-filter: blur(6px) saturate(120%);
+      -webkit-backdrop-filter: blur(6px) saturate(120%);
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid rgba(255,255,255,0.95);
+      box-shadow: 0 15px 40px rgba(2,6,23,0.7), 0 0 0 8px rgba(255,255,255,0.1);
+      object-fit: cover;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .profile-pic:hover {
+      transform: scale(1.05);
+      box-shadow: 0 20px 50px rgba(2,6,23,0.8), 0 0 0 8px rgba(255,255,255,0.15);
+    }
+    .clinic-name {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #fff;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.5px;
+      font-family: 'Inter', sans-serif;
+    }
+    .clinic-handle {
+      color: rgba(255,255,255,0.85);
+      font-size: 1rem;
+      font-weight: 500;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.2);
+      font-family: 'Inter', sans-serif;
+    }
+    .btn-custom {
+      border-radius: 12px;
+      padding: 0.85rem 1rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      box-shadow: 0 6px 18px rgba(2,6,23,.45);
+      transition: transform 0.16s ease, box-shadow 0.16s ease, opacity 0.12s ease;
+      text-decoration: none;
+      border: none;
+    }
+    .btn-custom:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 24px rgba(0,0,0,.4);
+    }
+    .btn-ig {
+      background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+      color: #fff;
+    }
+    .btn-tk {
+      background:linear-gradient(#000) ;
+      color: #fff;
+    }
+    .btn-fb {
+      background:linear-gradient(#1877f2) ;
+      color: #fff;
+    }
+    .btn-call {
+      background: linear-gradient(90deg,#28a745,#20c997);
+      color: #fff;
+    }
+    .btn-location {
+      background: linear-gradient(90deg,#6c757d,#495057);
+      color: #fff;
+    }
+    .btn i { font-size: 1.05rem }
+    .small-muted { color: rgba(255,255,255,0.75) }
+    .footer-section {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      text-align: center;
+    }
+    .footer-content {
+      opacity: 0.95;
+      padding: 15px 0;
+    }
+    .developer-name {
+      /* color: rgba(255,255,255,0.95); */
+      color: #000;
+      font-size: 1.1rem;
+      font-weight: 400;
+      font-family: 'Pacifico', cursive;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+      margin-bottom: 5px;
+      letter-spacing: 0.5px;
+      position: relative;
+    }
+    .developer-name::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
+    }
+    .phone-number {
+      /* color: rgba(255,255,255,0.85); */
+      color: #000;
+      font-size: 0.9rem;
+      font-weight: 500;
+      font-family: 'Kalam', cursive;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.3);
+      margin-bottom: 0;
+      letter-spacing: 1px;
+    }
+    .footer-text {
+      /* color: rgba(255,255,255,0.85); */
+      color:#000;
+      font-size: 0.9rem;
+      font-weight: 500;
+      font-family: 'Kalam', cursive;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.3);
+      margin-bottom: 0;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
 
-      <div class="d-grid gap-3 mt-4">
-        <a
-          href="https://www.instagram.com/easy_physio_clinic?igsh=ZnJpdXFhYjk0d2Mx"
-          target="_blank"
-          class="btn btn-custom btn-ig">
-          <i class="bi bi-instagram"></i> Instagram
-        </a>
+  <div class="container py-5 text-center">
 
-        <a
-          href="https://www.tiktok.com/@easyphysio_eg?_t=ZS-8zrrUs52qmY&_r=1"
-          target="_blank"
-          class="btn btn-custom btn-tk">
-          <i class="bi bi-tiktok"></i> TikTok
-        </a>
+    <div class="card-wrapper mx-auto">
 
-        <a
-          href="https://www.facebook.com/share/19cRM9D1Ak/"
-          target="_blank"
-          class="btn btn-custom btn-fb">
-          <i class="bi bi-facebook"></i> Facebook
-        </a>
+    <img src="WhatsApp Image 2025-09-22 at 5.00.15 PM.jpeg" 
+         class="profile-pic mb-4" alt="Easy Physio logo">
 
-        <a href="tel:+201554471355" class="btn btn-custom btn-call">
-          <i class="bi bi-telephone"></i> Call Us
-        </a>
+    <h1 class="clinic-name mb-2">Easy Physio Clinic</h1>
+    <p class="clinic-handle mb-4">@Easyphysio_Clinic</p>
 
-        <a
-          href="google.com/maps?q=31.0353755,31.362364&z=17&hl=en"
-          target="_blank"
-          class="btn btn-custom btn-location">
-          <i class="bi bi-geo-alt"></i> Clinic Location
-        </a>
+    <nav class="d-grid gap-3 mt-4" role="navigation" aria-label="Easy Physio links">
+
+      <a href="https://www.instagram.com/easy_physio_clinic?igsh=ZnJpdXFhYjk0d2Mx" target="_blank" rel="noopener noreferrer" aria-label="Open Instagram in a new tab" title="Instagram" class="btn btn-custom btn-ig">
+        <i class="bi bi-instagram"></i> Instagram
+      </a>
+
+      <a href="https://www.tiktok.com/@easyphysio_eg?_t=ZS-8zrrUs52qmY&_r=1" target="_blank" rel="noopener noreferrer" aria-label="Open TikTok in a new tab" title="TikTok" class="btn btn-custom btn-tk">
+        <i class="bi bi-tiktok"></i> TikTok
+      </a>
+
+      <a href="https://www.facebook.com/share/19cRM9D1Ak/" target="_blank" rel="noopener noreferrer" aria-label="Open Facebook in a new tab" title="Facebook" class="btn btn-custom btn-fb">
+        <i class="bi bi-facebook"></i> Facebook
+      </a>
+
+      <a href="tel:+201554471355" aria-label="Call us" title="Call" class="btn btn-custom btn-call">
+        <i class="bi bi-telephone"></i> Call Us
+      </a>
+
+      <a href="https://www.google.com/maps?q=31.0353755,31.362364&z=17&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Open clinic location on Google Maps in a new tab" title="Location" class="btn btn-custom btn-location">
+        <i class="bi bi-geo-alt"></i> Clinic Location
+      </a>
+
+    </nav>
+
+    <footer class="footer-section mt-5 pt-4">
+      <div class="footer-content">
+        <p class="developer-name">Seif Elden Hamdy</p>
+        <p class="footer-text">+20 01032484794</p>
       </div>
+    </footer>
 
-      <footer class="mt-4 text-center text-secondary small">
-        by: SeifElden Hamdy
-      </footer>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
